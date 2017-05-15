@@ -1,0 +1,2 @@
+class DetalleCarrito < ApplicationRecord
+end

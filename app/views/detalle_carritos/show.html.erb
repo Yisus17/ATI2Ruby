@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Id producto:</strong>
+  <%= @detalle_carrito.id_producto %>
+</p>
+
+<p>
+  <strong>Carrito:</strong>
+  <%= @detalle_carrito.carrito_id %>
+</p>
+
+<p>
+  <strong>Status:</strong>
+  <%= @detalle_carrito.status %>
+</p>
+
+<%= link_to 'Edit', edit_detalle_carrito_path(@detalle_carrito) %> |
+<%= link_to 'Back', detalle_carritos_path %>

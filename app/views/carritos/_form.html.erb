@@ -1,0 +1,32 @@
+<%= form_with(model: carrito, local: true) do |form| %>
+  <% if carrito.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(carrito.errors.count, "error") %> prohibited this carrito from being saved:</h2>
+
+      <ul>
+      <% carrito.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :cantidad %>
+    <%= form.number_field :cantidad, id: :carrito_cantidad %>
+  </div>
+
+  <div class="field">
+    <%= form.label :detalle_carrito_id %>
+    <%= form.number_field :detalle_carrito_id, id: :carrito_detalle_carrito_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :id_usuario %>
+    <%= form.number_field :id_usuario, id: :carrito_id_usuario %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

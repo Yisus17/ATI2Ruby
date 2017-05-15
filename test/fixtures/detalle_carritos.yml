@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  id_producto: 1
+  carrito_id: 1
+  status: false
+
+two:
+  id_producto: 1
+  carrito_id: 1
+  status: false
